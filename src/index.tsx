@@ -11,7 +11,7 @@ export const Calendar = (props: { year: number }) => {
             "Meeting",
             "Meeting room",
             new Date(props.year, 0, 1, 10, 0),
-            new Date(props.year, 0, 1, 12, 0)
+            new Date(props.year, 0, 1, 11, 0)
           ),
           new Appointment(
             "Dinner",
