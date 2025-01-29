@@ -1,0 +1,17 @@
+{
+  "name": "remarkable-gcal2",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.0.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.1.6",
+    "date-fns": "^4.1.0",
+    "react": "^19.0.0"
+  }
+}
