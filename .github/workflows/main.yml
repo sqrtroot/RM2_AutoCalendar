@@ -1,0 +1,23 @@
+name: Build PDF with bun
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-pdf:
+    
+    name: build-pdf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run index.tsx
+      - uses: actions/upload-artifact@v4.6.0
+        with:
+          name: PDF Output
+          path: out.pdf
+          if-no-files-found: error
